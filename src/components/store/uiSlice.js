@@ -2,7 +2,7 @@ const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = { isCartVisible: false };
 
-const cartUI = createSlice({
+const uiSlice = createSlice({
   name: "cart-ui",
   initialState: initialState,
   reducers: {
@@ -12,5 +12,5 @@ const cartUI = createSlice({
   },
 });
 
-export const cartUIActions = cartUI.actions;
-export default cartUI.reducer;
+export const cartUIActions = uiSlice.actions;
+export default uiSlice.reducer;
